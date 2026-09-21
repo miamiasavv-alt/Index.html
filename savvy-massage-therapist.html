@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savvy Massage Therapist</title>
+  <meta name="description" content="Savvy Massage Therapist — professional massage services in Texas, Arizona and Missouri.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #faf7f2;
+      color: #2d2722;
+      line-height: 1.6;
+    }
+    header {
+      background: #241b16;
+      color: white;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { font-size: 1.35rem; font-weight: 700; letter-spacing: .5px; }
+    nav a {
+      color: white; text-decoration: none; margin-left: 20px; font-size: .95rem;
+    }
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 80px 7%;
+      background: linear-gradient(135deg, #eee1d3, #fbf8f4);
+    }
+    .hero h1 { font-size: clamp(2.4rem, 7vw, 5rem); margin-bottom: 15px; }
+    .hero p { max-width: 650px; margin: 0 auto 28px; font-size: 1.1rem; }
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 30px;
+      background: #7d5f49;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 5px;
+    }
+    .btn.alt { background: #241b16; }
+    section { padding: 70px 7%; max-width: 1150px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 38px; }
+    .section-title h2 { font-size: 2.1rem; margin-bottom: 8px; }
+    .section-title p { color: #6d625a; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(45,39,34,.08);
+    }
+    .card h3 { margin-bottom: 9px; }
+    .price-box {
+      max-width: 600px;
+      margin: auto;
+      background: #241b16;
+      color: white;
+      border-radius: 20px;
+      padding: 35px;
+      text-align: center;
+    }
+    .price { font-size: 2.2rem; font-weight: 800; margin: 8px 0 20px; }
+    .contact {
+      text-align: center;
+      background: #eee1d3;
+      max-width: none;
+    }
+    .contact a { color: #5f4634; font-weight: 700; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #241b16;
+      color: #ddd;
+      font-size: .9rem;
+    }
+    @media (max-width: 700px) {
+      header { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 7px; font-size: .85rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Savvy Massage Therapist</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p>RELAX • RESTORE • REJUVENATE</p>
+      <h1>Feel Better. Move Freely. Relax.</h1>
+      <p>
+        Professional massage therapy focused on relaxation, muscle comfort,
+        recovery and overall wellness.
+      </p>
+      <a class="btn" href="#contact">Book a Session</a>
+      <a class="btn alt" href="#services">View Services</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Massage Services</h2>
+      <p>Choose the session that fits your wellness needs.</p>
+    </div>
+
+    <div class="services">
+      <div class="card">
+        <h3>Full-Body Massage</h3>
+        <p>A relaxing session designed to ease everyday muscle tension and promote overall relaxation.</p>
+      </div>
+      <div class="card">
+        <h3>Swedish Massage</h3>
+        <p>Gentle-to-moderate techniques focused on relaxation and stress relief.</p>
+      </div>
+      <div class="card">
+        <h3>Deep Tissue Massage</h3>
+        <p>Focused pressure for areas experiencing persistent muscle tightness and tension.</p>
+      </div>
+      <div class="card">
+        <h3>Sports Massage</h3>
+        <p>Targeted massage for active clients seeking muscle recovery and flexibility support.</p>
+      </div>
+      <div class="card">
+        <h3>Relaxation Massage</h3>
+        <p>A calming experience designed to help you unwind and leave feeling refreshed.</p>
+      </div>
+      <div class="card">
+        <h3>Two-Person Session</h3>
+        <p>Enjoy a massage experience together. Ask about availability and scheduling.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="section-title">
+      <h2>Simple Pricing</h2>
+      <p>Clear pricing for your appointment.</p>
+    </div>
+    <div class="price-box">
+      <h3>60-Minute Massage</h3>
+      <div class="price">$60</div>
+      <p>Two-person special: <strong>$100</strong></p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Book Your Session</h2>
+      <p>Serving clients in Texas, Arizona and Missouri.</p>
+    </div>
+    <p>Email: <a href="mailto:miamaisavvy@gmail.com">miamaisavvy@gmail.com</a></p>
+    <p>Snapchat: <strong>Savvymia20</strong></p>
+    <br>
+    <a class="btn" href="mailto:miamaisavvy@gmail.com?subject=Massage%20Appointment%20Request">Request an Appointment</a>
+  </section>
+</main>
+
+<footer>
+  © 2026 Savvy Massage Therapist. All rights reserved.
+</footer>
+
+</body>
+</html>
